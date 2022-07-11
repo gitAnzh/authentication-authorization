@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "085df225-de40-4282-b19f-c88bc75067b5",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "Aasood",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Aasoodadmin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/token/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"token",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "ariyaeshaghiyan02@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "a_eshaghian",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Eshaghian90%",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Arya",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Eshaghian",
+							"type": "text"
+						},
+						{
+							"key": "usertype",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/token/signup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"token",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log out",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 80ebd4e929f88df4f0fbcbf6c759ed7ff8795509",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/token/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"token",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 6941ffbdc6f0a3dc294508494eff6e121cd4a914",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "old_password",
+							"value": "Aasoodadmin",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "adminadmin",
+							"type": "text"
+						},
+						{
+							"key": "renew_password",
+							"value": "adminadmin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/token/changepassword",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"token",
+						"changepassword"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

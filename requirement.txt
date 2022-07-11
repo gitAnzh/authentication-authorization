@@ -1,0 +1,5 @@
+django
+djongo
+djangorestframework
+djoser
+pika
